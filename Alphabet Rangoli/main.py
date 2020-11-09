@@ -5,9 +5,7 @@ x = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i',
 def print_rangoli(n):
     k =  x[0:n]
 
-    # k = ['e', 'd', 'c', 'b', 'a', 'b', 'c', 'd', 'e']
     k =  sorted(k, reverse=True)[0:n-1] + sorted(k)
-    len_string = len('-'.join(k))
     count = 0
     #above function
     if len(k) != 1:
